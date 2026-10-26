@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fil">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Subukan ang iyong kaalaman sa Filipino 1 gamit ang mga pagsusulit para sa bawat termino.">
+  <title>Pagsasanay — Hiraya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-hiraya sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="../index.html" aria-label="Hiraya home"><span class="brand-icon"><img src="../image/hiraya.png" alt=""></span><span class="brand-name">HIRAYA</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="introduction.html">Panimula</a></li>
+          <li class="nav-item"><a class="nav-link" href="lessons.html">Mga Aralin</a></li>
+          <li class="nav-item"><a class="nav-link active" href="practice.html" aria-current="page">Pagsasanay</a></li>
+          <li class="nav-item"><a class="nav-link" href="reflection.html">Pangwakas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="page-hero quiz-hero">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow-line"></span> 03 / PRACTICE ROOM</p>
+      <h1>Pagsasanay at <em>pagbabalik-aral.</em></h1>
+      <p class="hero-copy mt-3">Pumili ng termino, subukan ang 50 tanong, at tingnan ang iyong marka sa dulo.</p>
+    </div>
+  </header>
+  <main class="section-pad quiz-section">
+    <div class="container quiz-shell">
+      <section class="quiz-panel" aria-labelledby="quizHeading">
+        <div class="quiz-intro">
+          <div>
+            <p class="introduction-kicker">PUMILI NG PAGSUSULIT</p>
+            <h2 id="quizHeading">Saan ka magsisimula?</h2>
+          </div>
+          <span class="quiz-total-badge">50 TANONG BAWAT TERMINO</span>
+        </div>
+        <div class="quiz-term-picker" role="group" aria-label="Piliin ang termino">
+          <button class="quiz-term-button is-selected" type="button" data-quiz-term="prelim" aria-pressed="true"><span>01</span>Prelim</button>
+          <button class="quiz-term-button" type="button" data-quiz-term="midterm" aria-pressed="false"><span>02</span>Midterm</button>
+          <button class="quiz-term-button" type="button" data-quiz-term="semi" aria-pressed="false"><span>03</span>Semi-Finals</button>
+          <button class="quiz-term-button" type="button" data-quiz-term="finals" aria-pressed="false"><span>04</span>Finals</button>
+        </div>
+        <p id="quizTermDescription" class="quiz-term-description"></p>
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress-label"><span id="quizProgressText">Tanong 1 sa 50</span><span id="quizAnsweredText">0 nasagutan</span></div>
+          <div class="quiz-progress-track" role="progressbar" aria-label="Pag-usad ng pagsusulit" aria-valuemin="0" aria-valuemax="50" aria-valuenow="0"><span id="quizProgressBar"></span></div>
+        </div>
+        <div id="quizQuestionArea" class="quiz-question-area">
+          <div class="quiz-question-meta"><span id="quizQuestionNumber">TANONG 01</span><span id="quizTopicLabel">PRELIM</span></div>
+          <h3 id="quizQuestion" tabindex="-1"></h3>
+          <div id="quizOptions" class="quiz-options" role="group" aria-label="Mga pagpipilian"></div>
+          <p id="quizFeedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+          <div class="quiz-controls">
+            <button class="btn btn-outline-hiraya" id="quizPrevious" type="button">← Nakaraan</button>
+            <button class="btn btn-hiraya" id="quizNext" type="button">Sagutin at magpatuloy →</button>
+          </div>
+        </div>
+        <section id="quizResults" class="quiz-results" hidden aria-live="polite">
+          <p class="introduction-kicker">PAGSUSULIT NATAPOS</p>
+          <h3 id="quizResultHeading"></h3>
+          <p id="quizResultCopy"></p>
+          <div class="quiz-score-card"><span>ANG IYONG MARKA</span><strong id="quizScore"></strong><span id="quizScorePercent"></span></div>
+          <div id="quizReview" class="quiz-review"></div>
+          <button class="btn btn-hiraya mt-3" id="quizRetry" type="button">Ulitin ang pagsusulit ↻</button>
+        </section>
+      </section>
+      <aside class="quiz-side-note">
+        <span class="quiz-side-mark" aria-hidden="true">✳</span>
+        <p class="info-label">PAALALA</p>
+        <h2>Matuto sa bawat sagot.</h2>
+        <p>Pumili ng sagot bago magpatuloy. Maaari kang bumalik sa naunang tanong at baguhin ang sagot bago tapusin ang pagsusulit.</p>
+        <a href="lessons.html">Balikan ang mga aralin ↗</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-content"><div class="footer-main"><a class="footer-brand" href="../index.html" aria-label="Hiraya home">HIRAYA<span>.</span></a><p class="footer-motto">Mga Aral Ngayon, Pangarap sa Hinaharap.</p></div><div class="footer-details"><p><strong>Inihanda ng:</strong> Group 4</p><p>BSIT 1st Year–1B <span aria-hidden="true">·</span> Filipino 1</p><p><strong>Guro:</strong> Emmanuel Ando</p><p>Cordova Public College <span aria-hidden="true">·</span> Taong Panuruan 2026–2027</p></div><div class="footer-copyright">© 2026 Hiraya. Lahat ng karapatan ay nakalaan.</div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/quiz-data.js"></script>
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
